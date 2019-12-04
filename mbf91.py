@@ -1,5 +1,5 @@
 #!/usr/bin/python3.7
-# Copyright : DulLah
+# Copyright : DulLah ©2019
 # Updater    : KMB.ID ( L4.ERORR )
 
 ## USE PYTHON VERSI 3 ##
