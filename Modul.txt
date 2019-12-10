@@ -1,0 +1,3 @@
+Mechanize
+Requests
+Bs4
