@@ -1,6 +1,6 @@
 # programe Python 3
 # python3 Mbf91.py
-<b><Kmb. Id (l4. Error) feat DuLLah (dz-id) 
+<b>Kmb. Id (l4. Error) feat DuLLah (dz-id) 
 
 How to install ;
 
