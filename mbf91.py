@@ -1,7 +1,7 @@
 #!/usr/bin/python3.7
 # -*- Coding: utf-8 -*-
-# Credits     : DulLah
-# Updater    : KMB.ID ( L4.ERORR )
+# Credits   : DulLah
+# Updater   : KMB.ID ( L4.ERORR )
 # Copyright : © 2019
 
 ## USE PYTHON VERSI 3 ##
