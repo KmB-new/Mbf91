@@ -11,5 +11,8 @@ $ cd Mbf91<br>
 $ chmod 777 *<br>
 $ pip3 install --upgrade pip<br>
 $ pip3 install -r modul.txt<br>
+```
+<b>go to RUN : </b><br>
+```
 $ python3 mbf91.py<br>
 ```
