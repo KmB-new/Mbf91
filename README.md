@@ -17,3 +17,12 @@ $ pip3 install -r modul.txt
 $ python3 mbf91.py
 ```
 <img src = https://github.com/KmB-new/Mbf91/blob/master/demo/IMG_20191213_194215.jpg>
+<br>
+<b># jika sudah terinstall semua
+<br><b>Dan suatu saat anda ingin menjalankan lagi, <br>
+cukup dg perintah: </b></br>
+
+```
+$ cd Mbf91<br>
+$ python3 mbf91.py
+```
