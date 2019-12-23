@@ -1,18 +1,19 @@
 # programe Python 3
-
+# copyright © 2019 + update
 <b>Kmb. Id (l4. Error) feat DuLLah (dz-id) 
 
 How to install ;
 ```
-$ Apt-get update && apt-get upgrade<br>
-$ pkg install python3 git<br>
-$ git clone https://github.com/KmB-new/Mbf91<br>
-$ cd Mbf91<br>
-$ chmod 777 *<br>
-$ pip3 install --upgrade pip<br>
-$ pip3 install -r modul.txt<br>
+$ Apt-get update && apt-get upgrade
+$ pkg install python3 git
+$ git clone https://github.com/KmB-new/Mbf91
+$ cd Mbf91
+$ chmod 777 *
+$ pip3 install --upgrade pip
+$ pip3 install -r modul.txt
 ```
 <b>go to RUN : </b><br>
 ```
-$ python3 mbf91.py<br>
+$ python3 mbf91.py
 ```
+<img src = https://github.com/KmB-new/Mbf91/blob/master/demo/IMG_20191213_194215.jpg>
