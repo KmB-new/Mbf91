@@ -23,7 +23,7 @@ $ python3 mbf91.py
 cukup dg perintah: </b></br>
 
 ```
-$ cd Mbf91<br>
+$ cd Mbf91
 $ python3 mbf91.py
 ```
 ## ENJOY IN YOUR LIVE....NEVER GIVE UP
