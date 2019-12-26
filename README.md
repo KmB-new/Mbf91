@@ -1,3 +1,5 @@
+<img src = https://github.com/KmB-new/Mbf91/blob/master/demo/IMG_20191213_194215.jpg>
+
 # programe Python 3
 # copyright © 2019 + update
 <b>Kmb. Id (l4. Error) feat DuLLah (dz-id) 
@@ -16,8 +18,8 @@ $ pip3 install -r modul.txt
 ```
 $ python3 mbf91.py
 ```
-<img src = https://github.com/KmB-new/Mbf91/blob/master/demo/IMG_20191213_194215.jpg>
-<br>
+👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍
+××××××××××××××××××××××××××××××××××××××××××××××××××
 ## * jika sudah terinstall semua *
 <br><b>Dan suatu saat anda ingin menjalankan lagi, <br>
 cukup dg perintah: </b></br>
