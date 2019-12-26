@@ -1,3 +1,6 @@
 Mechanize
 Requests
 Bs4
+crayons
+click
+promt_toolkit
