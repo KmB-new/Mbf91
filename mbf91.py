@@ -222,7 +222,7 @@ def menu(n,id,toket):
 		except KeyError:
 			exit("\033[1;95m[\033[1;91m!\033[1;95m] \x1b[93mUps sorry group not found !!")
 		print("\033[1;95m[\033[1;97m+\033[1;95m] \x1b[92mfrom \x1b[91m:\x1b[97m "+g)
-		for y in s.get(url.format(idg+"/members?fields=name,id&start=0&listType=list_invited&limit=99999999&access_token=%s"%(toket))).json()["data"]:
+		for y in s.get(url.format(idg+"/members?fields=name,id&limit=99999999&access_token=%s"%(toket))).json()["data"]:
 			target.append(y["id"])
 			
 	elif kmb =="4" or kmb =="04":
